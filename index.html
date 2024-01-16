@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Casa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nuestra Casa</h1>
+    </header>
+    <main>
+        <section class="task-section">
+            <h2>¿Qué tarea has realizado?</h2>
+            <div class="task-buttons">
+                <button class="task-button" data-task="Barrer">Barrer</button>
+                <button class="task-button" data-task="Fregar">Fregar</button>
+                <button class="task-button" data-task="Baño">Baño</button>
+            </div>
+        </section>
+        <section class="user-section">
+            <h2>¿Quién eres?</h2>
+            <div class="user-buttons">
+                <button class="user-button" data-user="David">David</button>
+                <button class="user-button" data-user="Fede">Fede</button>
+                <button class="user-button" data-user="Oli">Oli</button>
+            </div>
+        </section>
+        <button id="submit-button">Enviar</button>
+
+        <!-- Tabla que muestra el recuento de tareas -->
+<section class="task-summary">
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>Tarea\Usuario</th>
+                <th>David</th>
+                <th>Fede</th>
+                <th>Oli</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Barrer</td>
+                <td id="David-Barrer">0</td>
+                <td id="Fede-Barrer">0</td>
+                <td id="Oli-Barrer">0</td>
+            </tr>
+            <tr>
+                <td>Fregar</td>
+                <td id="David-Fregar">0</td>
+                <td id="Fede-Fregar">0</td>
+                <td id="Oli-Fregar">0</td>
+            </tr>
+            <tr>
+                <td>Baño</td>
+                <td id="David-Baño">0</td>
+                <td id="Fede-Baño">0</td>
+                <td id="Oli-Baño">0</td>
+            </tr>
+        </tbody>
+    </table>
+        <button id="reset-button">Resetear Contador</button>
+</section>
+
+
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

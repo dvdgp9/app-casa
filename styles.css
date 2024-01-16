@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.task-section, .user-section {
+    margin-bottom: 1em;
+}
+
+.task-buttons, .user-buttons {
+    margin: 1em 0;
+}
+
+.task-button, .user-button, #submit-button {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-button:hover, .user-button:hover, #submit-button:hover {
+    background-color: #ddd;
+}
+
+#submit-button {
+    background-color: #5c6bc0;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0.75em 1.5em;
+    border-radius: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .task-button, .user-button, #submit-button {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+}
+
+.selected {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+
+/* Estilos tabla */
+.task-summary {
+    margin-top: 20px;
+}
+
+#taskTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#taskTable th, #taskTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#taskTable th {
+    background-color: #f2f2f2;
+}
